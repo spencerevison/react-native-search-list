@@ -327,7 +327,7 @@ export default class SearchList extends Component {
   }
 
   scrollToSection (section) {
-    if (!this.sectionIDs || this.sectionIDs.length === 0) {
+    if (!this.sectionIDs || this.sectionIDs.length === 0 || section === undefined) {
       return
     }
     let y = this.props.headerHeight || 0
